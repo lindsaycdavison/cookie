@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+	margin: 0;
+}
+
+h1 ,h2, h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+header{
+	text-align: center;
+	color: white;
+	background-image: url(../images/header-bg.jpg); 
+	background-size:cover; 
+	padding:30px;
+	margin-bottom: 30px
+/*	background-position: center;
+*/	/*background:green url(..images/header-bg.jpg) cover;*/
+}
+
+a {
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 0 10px 0;
+	margin: 10px;
+}
+
+header a:hover {
+  border-bottom: 1px solid white;
+}
+
+header li{
+	display: inline;
+	margin: 10px;
+}
+
+.container{
+	border: 3px dotted red;
+	width:1000px;
+	margin: 0 auto;
+}
+
+.recipes{
+	width: 60%;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.sidebar{
+	width:40%;
+	float: right;
+	background: lightgreen url(../images/sidebar-bg.png);
+	padding: 30px;
+	border-radius: 8px;
+}
+
+.cookie {
+	float: left;
+	width:50%;
+	padding: 0 20px;
+}
+
+.cookie img {
+	max-width: 100%;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	background-color: black;
+	color:white;
+	padding:30px;
+}
+
+@media(max-width: 1000px) {
+	.sidebar {
+		display: none;
+		/*width:100%;*/
+	}
+	.recipes,.container{
+		width: 100%;
+	}
+}
+@media(max-width:600px){
+	.cookie{
+		width:100%;
+		float:none;
+	}
+}
+
